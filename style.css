@@ -1,0 +1,373 @@
+/* :root {
+  --yellow: #ffc600;
+  --black: #272727;
+} */
+
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+  background: #323a45;
+  font-family: 'Oswald', sans-serif;
+
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+ /*
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 5px 0;
+}
+
+
+.item {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid rgba(0, 0, 0, 0.03);
+  border-radius: 3px;
+  font-size: 35px;
+  background-color: #ffc600;
+}
+
+.item p {
+  margin: 0 0 5px 0;
+} */
+
+button {
+  /* background: #005596; */
+  border: 0;
+  padding: 10px 20px;
+}
+
+.top {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "hero hero"
+    "content1 content2"
+    "content3 content4"
+    "gallery content5"
+    "footer footer"
+}
+
+.hero {
+  grid-area: hero;
+  min-height: 100vh;
+  background: rgba(0, 0, 0, 0.4) url('https://psgimages.stadion.io/media/12252/diapo-rennes-40.jpg?center=0.34814814814814815,0.45544554455445546&mode=crop&width=1200&height=675&quality=75');
+  background-size: cover;
+
+  padding: 50px;
+  background-position: bottom right;
+
+  display: flex;
+  flex-direction: column;
+  /* align-items: start; */
+  justify-content: center;
+  text-align: center;
+  align-items: end;
+  opacity: .6;
+
+}
+
+.hero > * {
+  /* background: #000; */
+  color: #fff;
+  opacity: 1; !important;
+  padding: 5px;
+  margin-bottom: 3%;
+
+}
+
+.hero h1 {
+
+  font-size: 4rem;
+}
+
+.hero p {
+  font-size: 2rem;
+}
+
+
+.content1 {
+  grid-area: content1;
+  /* grid-column: 1  */
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr 1fr
+
+}
+
+.content img {
+  width: 100%;
+  /* min-height: 100vh; */
+  height: 100%;
+  opacity: .7;
+}
+
+.content2 {
+  grid-area: content2;
+  /* background: #005596; */
+  /* grid-column: 2 / 2; */
+  display: grid;
+  /* grid-template-rows: 1fr 1fr; */
+  font-size: 1.7rem;
+  color: #fff;
+    padding: 0 10%;
+    font-weight: 300;
+
+}
+
+.subtitle {
+  align-self: center;
+
+
+}
+
+.content3 {
+  grid-area: content3;
+  /* background: #005596; */
+
+}
+
+.content4 {
+  grid-area: content4;
+  opacity: .9;
+}
+
+.content5 {
+  /* grid-gap: 20px; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr 1fr 200px;
+  opacity: .9;
+}
+
+.content5 img {
+  width: 100%;
+  height: 90%;
+  /* margin: 10px; */
+}
+
+.introducing {
+  grid-column: 1 / -1;
+    align-self: center;
+    font-size: 5rem;
+    padding: 0 10%;
+    color: #fff;
+    font-weight: 300;
+}
+
+.kit {
+  padding: 26px;
+  grid-column: span 1;
+}
+
+
+
+.gallery1 {
+  display: grid;
+  /* grid-gap: 10px; */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /* grid-template-columns: repeat(auto-fit) */
+  grid-template-rows: 1fr
+}
+
+.gallery1 img {
+  width: 100%;
+  height: 100%;
+}
+
+.footer {
+  padding: 40px;
+  min-height: 600px;
+  grid-area: footer;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  /* grid-template-areas:
+    "line line line line line"
+    "footer-col footer-col footer-col footer-col footer-col" */
+  justify-items: center;
+  /* align-items: center; */
+line-height: 2.2;
+font-size: 1.3rem;
+background-color: #151e2d;
+color: #fff;
+font-weight: 300;
+}
+
+hr {
+  grid-column: 1 / -1;
+}
+.footer-col {
+  /* grid-area: footer-col; */
+
+}
+.list-title {
+  text-transform: uppercase;
+}
+
+hr {
+  display: grid;
+  grid-column: 1 / -1;
+}
+
+
+
+
+
+/* */
+body {
+	overflow: scroll;
+	font-family: "Open Sans", Arial, Helvetica;
+	text-align: center;
+	background-color: #1e202b;
+	color: #666666;
+	background-image: url(https://subtlepatterns.com/patterns/stardust.png);
+	background-position: initial initial;
+	background-repeat: initial initial;
+}
+
+.clear	{
+	clear: both;
+	display: block;
+	width: 0;
+	height: 0;
+	visibility: hidden;
+}
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 30px 0;
+	font-weight: 300;
+}
+h1 { font-size: 34px; }
+h2 { font-size: 28px; }
+h3 { font-size: 22px; }
+h4 { font-size: 18px; }
+h5 { font-size: 16px; }
+h6 { font-size: 14px; }
+
+#container {
+	width:  860px;
+	margin: 0 auto;
+}
+
+section {
+	position: relative;
+	height: 200px;
+	margin: 60px 0;
+}
+
+.section--white {
+	background-color: #FFFFFF;
+}
+
+.section--red {
+	background-color: #E74C3C;
+}
+
+.section--purple {
+	background-color: #D6A8E9;
+}
+
+.section--blue {
+	background-color: #33CCF7;
+}
+
+.section--yellow {
+	background-color: #F4E9B4;
+}
+
+.section--green {
+	background-color: #80D99D;
+}
+.section--cyan{
+	background-color: #80D99D;
+}
+
+.section--pale{
+	background-color: #F4E9B4;
+}
+
+.col_third section { margin: 0; }
+
+.icn_red { color: #FF3D6A; }
+.icn_purple { color: #9B59B6; }
+.icn_blue{ color: #3498DB; }
+.icn_yellow { color: #F1C40F; }
+.icn_green { color: #80D99D; }
+
+/*-=-=-=-=-=-=-=-=-=-*/
+/* Wow Image */
+/*-=-=-=-=-=-=-=-=-= */
+
+.service-section {
+	margin: 20px 0;
+	position: relative;
+	overflow: hidden;
+}
+
+.wow_imgage {
+	position: relative;
+	float: left;
+	margin: 0 20px 20px 0;
+	width: 270px;
+	height: 180px;
+}
+
+.wow_imgage img {
+	border: 4px solid #e4e4e1;
+}
+
+/*-=-=-=-=-=-=-=-=-=-*/
+/* Column Grids */
+/*-=-=-=-=-=-=-=-=-= */
+
+.col_half { width: 49%; }
+.col_third { width: 32%; }
+.col_fourth { width: 23.5%; }
+.col_fifth { width: 18.4%; }
+.col_sixth { width: 15%; }
+.col_three_fourth { width: 74.5%;}
+.col_twothird{ width: 66%;}
+.col_half,
+.col_third,
+.col_twothird,
+.col_fourth,
+.col_three_fourth,
+.col_fifth{
+	position: relative;
+	display:inline;
+	display: inline-block;
+	float: left;
+	margin-right: 2%;
+	margin-bottom: 20px;
+}
+.end { margin-right: 0 !important; }
+
+/*-=-=-=-=-=-=-=-=-=-*/
+/* Links */
+/*-=-=-=-=-=-=-=-=-= */
+
+a {	text-decoration: none; color: #666666;}
+a:hover, a:active { outline: 0; color: #666666; }
